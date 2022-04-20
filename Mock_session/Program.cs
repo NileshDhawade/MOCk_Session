@@ -58,6 +58,30 @@ namespace Mock_session
             {
                 Console.WriteLine(list[i]);
             }
+
+            Console.WriteLine("=================================Product Information==================================");
+            
+            List<Product> p = new List<Product>();
+
+            p.Add(new Product(111,"Laptop","Electronic products"));
+            p.Add(new Product(222, "Sofa","Furniture Products"));
+            p.Add(new Product(333, "Bed", "Furniture Products"));
+            p.Add(new Product(444, "SONY Tv", "Electronic products"));
+
+            p.Insert(0, new Product(777, "Oven", "Electronic Equipment"));
+
+            foreach (Product pp in p)
+            {
+                Console.WriteLine(pp);
+            }
+            Console.WriteLine("------------------------------------------");
+            for (int i = 0; i < p.Count; i++)
+            {
+                Console.WriteLine(p[i]);
+            }
+
+
+
         }
     }
 }
